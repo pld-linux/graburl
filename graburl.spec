@@ -37,13 +37,16 @@ cd src/
 %install
 rm -rf $RPM_BUILD_ROOT
 
-install -d $RPM_BUILD_ROOT%{_bindir}/
+install -d $RPM_BUILD_ROOT{%{_bindir},%{_sysconfdir}}
+
 install -C src/graburl $RPM_BUILD_ROOT%{_bindir}/
+install graburlrc.example $RPM_BUILD_ROOT%{_sysconfdir}/graburlrc
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc README.txt Changes.txt GrabURL.txt graburlrc.example
+%doc README.txt Changes.txt GrabURL.txt
+%config(noreplace) %verify(not md5 mtime size) %{_sysconfdir}/graburlrc
 %attr(755,root,root) %{_bindir}/*
