@@ -31,7 +31,9 @@ GrabURL jest wykorzystywany w skryptach aktualizuj±cych afraid.org.
 %setup -q -n %{name}
 
 %build
-%{__make} -C src linux
+%{__make} -C src linux \
+	CC="%{__cc}" \
+	CFLAGS="%{rpmcflags} -I./libgurl"
 
 %install
 rm -rf $RPM_BUILD_ROOT
