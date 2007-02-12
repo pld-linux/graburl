@@ -1,5 +1,5 @@
 Summary:	Small program that can download files using HTTP
-Summary(pl):	Ma³y program do ¶ci±gania plików przy u¿yciu HTTP
+Summary(pl.UTF-8):   MaÅ‚y program do Å›ciÄ…gania plikÃ³w przy uÅ¼yciu HTTP
 Name:		graburl
 Version:	2.0.1
 Release:	1
@@ -18,14 +18,14 @@ later (ie after a break with Ctrl-C).
 
 GrabURL is used in afraid.org update-scripts.
 
-%description -l pl
-GrabURL jest ma³ym programem, który potrafi ¶ci±gaæ pliki u¿ywaj±c
-HTTP. Zarz±dza wewnêtrzn± list± URL-i i mo¿e skanowaæ ¶ci±gniête pliki
-HTML aby dodaæ URL-e rekursywnie. Mo¿e u¿ywaæ wyra¿eñ regularnych do
-dopasowania dodawanych URL-i, zapisuje postêp do "pliku roboczego",
-aby móc kontynuowaæ pó¼niej (np. po przerwaniu przy pomocy Ctrl-C).
+%description -l pl.UTF-8
+GrabURL jest maÅ‚ym programem, ktÃ³ry potrafi Å›ciÄ…gaÄ‡ pliki uÅ¼ywajÄ…c
+HTTP. ZarzÄ…dza wewnÄ™trznÄ… listÄ… URL-i i moÅ¼e skanowaÄ‡ Å›ciÄ…gniÄ™te pliki
+HTML aby dodaÄ‡ URL-e rekursywnie. MoÅ¼e uÅ¼ywaÄ‡ wyraÅ¼eÅ„ regularnych do
+dopasowania dodawanych URL-i, zapisuje postÄ™p do "pliku roboczego",
+aby mÃ³c kontynuowaÄ‡ pÃ³Åºniej (np. po przerwaniu przy pomocy Ctrl-C).
 
-GrabURL jest wykorzystywany w skryptach aktualizuj±cych afraid.org.
+GrabURL jest wykorzystywany w skryptach aktualizujÄ…cych afraid.org.
 
 %prep
 %setup -q -n %{name}
