@@ -1,5 +1,5 @@
 Summary:	Small program that can download files using HTTP
-Summary(pl.UTF-8):   Mały program do ściągania plików przy użyciu HTTP
+Summary(pl.UTF-8):	Mały program do ściągania plików przy użyciu HTTP
 Name:		graburl
 Version:	2.0.1
 Release:	1
